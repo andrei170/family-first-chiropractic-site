@@ -1,0 +1,1290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family First Chiropractic | Prenatal and Pediatric Chiropractic Care | Green Bay and Algoma, WI</title>
+<meta name="description" content="Family First Chiropractic provides prenatal, preconception, postpartum, and pediatric chiropractic care for the whole family. Two clinics: Green Bay (443 S. Jackson Street) and Algoma (305 Steele Street, Tuesdays). Dr. Jodi Rabas, DC and Dr. Joe Huss, DC. Webster Technique territory.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sage:      #5c8c7a;
+    --sage-soft: #a3c4b5;
+    --sage-deep: #3a6355;
+    --navy:      #1f3a52;
+    --navy-deep: #142639;
+    --cream:     #f7f3ec;
+    --bone:      #ede6d6;
+    --warm:      #c9a878;
+    --warm-deep: #a8895c;
+    --clay:      #b06048;
+    --clay-deep: #8e4934;
+    --rose:      #d4998a;
+    --rose-soft: #f0ddd7;
+    --ink:       #1e1b16;
+    --ink-soft:  #4a453c;
+    --line:      #ddd5c4;
+    --white:     #ffffff;
+    --serif:     'Playfair Display', Georgia, serif;
+    --sans:      'Inter', system-ui, sans-serif;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body {
+    font-family: var(--sans);
+    color: var(--ink);
+    background: var(--cream);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+  a { color: inherit; text-decoration: none; }
+  img { max-width: 100%; height: auto; display: block; }
+  .container { max-width: 1240px; margin: 0 auto; padding: 0 28px; }
+
+  /* ---- HEADER ---- */
+  header {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(247, 243, 236, 0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--line);
+    transition: padding 0.3s, box-shadow 0.3s;
+    padding: 20px 0;
+  }
+  header.condensed {
+    padding: 12px 0;
+    box-shadow: 0 2px 16px rgba(31,58,82,0.10);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+  .brand {
+    font-family: var(--serif);
+    font-size: 21px; font-weight: 600; letter-spacing: 0.2px;
+    color: var(--navy); line-height: 1.1;
+  }
+  .brand small {
+    display: block; font-family: var(--sans);
+    font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--sage); font-weight: 600; margin-top: 3px;
+  }
+  .nav-links { display: flex; gap: 24px; font-size: 14px; font-weight: 500; }
+  .nav-links a { color: var(--navy); transition: color 0.2s; }
+  .nav-links a:hover { color: var(--sage); }
+  .cta-btn {
+    background: var(--sage); color: var(--white);
+    padding: 12px 24px; border-radius: 3px;
+    font-size: 12px; font-weight: 700; letter-spacing: 0.12em;
+    text-transform: uppercase; transition: all 0.25s;
+    border: 1px solid var(--sage); display: inline-block;
+    white-space: nowrap;
+  }
+  .cta-btn:hover { background: var(--sage-deep); border-color: var(--sage-deep); transform: translateY(-1px); box-shadow: 0 6px 18px rgba(60,99,85,0.22); }
+  .cta-btn-outline {
+    background: transparent; color: var(--white); border: 1px solid rgba(255,255,255,0.6);
+  }
+  .cta-btn-outline:hover { background: rgba(255,255,255,0.12); border-color: var(--white); transform: translateY(-1px); }
+  .cta-btn-cream {
+    background: var(--cream); color: var(--sage-deep); border-color: var(--cream);
+  }
+  .cta-btn-cream:hover { background: var(--white); color: var(--sage-deep); border-color: var(--white); }
+  @media (max-width: 960px) { .nav-links { display: none; } }
+
+  /* ---- HERO ---- */
+  .hero {
+    min-height: 100vh;
+    background: linear-gradient(148deg, var(--navy) 0%, var(--sage-deep) 55%, var(--navy-deep) 100%);
+    color: var(--cream);
+    display: flex; align-items: center;
+    position: relative; overflow: hidden;
+    padding: 100px 0 80px;
+  }
+  .hero-bg-photo {
+    position: absolute; inset: 0; z-index: 0;
+    background-image: url('https://cdcssl.ibsrv.net/ibimg/smb/1233x821_80/webmgr/0m/u/7/gallery/Jodi-527.jpg.webp');
+    background-size: cover; background-position: center 30%;
+    opacity: 0.22;
+  }
+  .hero::before {
+    content: ''; position: absolute; top: -15%; right: -8%;
+    width: 780px; height: 780px;
+    background: radial-gradient(circle, rgba(201,168,120,0.18), transparent 60%);
+    filter: blur(80px); pointer-events: none; z-index: 1;
+  }
+  .hero::after {
+    content: ''; position: absolute; bottom: -18%; left: -8%;
+    width: 560px; height: 560px;
+    background: radial-gradient(circle, rgba(163,196,181,0.22), transparent 65%);
+    filter: blur(65px); pointer-events: none; z-index: 1;
+  }
+  /* Subtle organic arc decoration */
+  .hero-arc {
+    position: absolute; bottom: -2px; left: 0; right: 0;
+    height: 80px; overflow: hidden;
+  }
+  .hero-arc svg { width: 100%; height: 100%; display: block; }
+
+  .hero-inner {
+    display: grid; grid-template-columns: 1.3fr 1fr; gap: 72px; align-items: center;
+    position: relative; z-index: 2; width: 100%;
+  }
+  .hero-inner > div:first-child { position: relative; z-index: 2; }
+  @media (max-width: 980px) { .hero-inner { grid-template-columns: 1fr; gap: 52px; } }
+
+  .hero-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--sage-soft); margin-bottom: 22px;
+  }
+  .hero h1 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(38px, 5vw, 64px); line-height: 1.07;
+    margin-bottom: 26px; letter-spacing: -0.015em; color: var(--cream);
+  }
+  .hero h1 em { color: var(--warm); font-style: italic; font-weight: 600; }
+  .hero-sub {
+    font-size: 18px; color: rgba(247,243,236,0.84);
+    max-width: 580px; line-height: 1.65; margin-bottom: 36px;
+  }
+  .hero-actions { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; margin-bottom: 36px; }
+  .hero-phone {
+    font-size: 13px; color: rgba(247,243,236,0.75); letter-spacing: 0.06em;
+  }
+  .hero-phone strong {
+    display: block; font-family: var(--serif);
+    font-size: 24px; color: var(--cream); font-weight: 600; letter-spacing: 0; margin-top: 2px;
+  }
+  .hero-chips { display: flex; flex-wrap: wrap; gap: 10px; }
+  .chip {
+    font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase;
+    color: rgba(247,243,236,0.9); padding: 7px 14px;
+    border: 1px solid rgba(201,168,120,0.38); border-radius: 2px;
+    background: rgba(201,168,120,0.08);
+  }
+
+  /* Hero card */
+  .hero-card {
+    background: var(--cream); border-radius: 5px;
+    padding: 40px 36px;
+    box-shadow: 0 32px 64px rgba(0,0,0,0.30);
+    border-top: 4px solid var(--sage);
+    position: relative;
+  }
+  .hero-card-label {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--sage); margin-bottom: 14px;
+  }
+  .hero-card h3 {
+    font-family: var(--serif); font-size: 27px; font-weight: 600;
+    color: var(--navy); line-height: 1.2; margin-bottom: 14px;
+  }
+  .hero-card-rule { width: 52px; height: 2px; background: var(--warm); margin: 18px 0 22px; }
+  .hero-card-row {
+    display: flex; gap: 18px; padding: 14px 0; border-bottom: 1px solid var(--line);
+  }
+  .hero-card-row:last-child { border-bottom: none; }
+  .hero-card-row .num {
+    font-family: var(--serif); font-size: 36px; font-weight: 600;
+    color: var(--sage); line-height: 1; min-width: 56px;
+  }
+  .hero-card-row .txt { font-size: 13px; color: var(--ink-soft); line-height: 1.45; padding-top: 5px; }
+  .hero-card-row .txt strong { color: var(--navy); display: block; font-size: 14px; margin-bottom: 2px; }
+
+  /* ---- TRUST STRIP ---- */
+  .trust {
+    background: var(--white); padding: 44px 0;
+    border-bottom: 1px solid var(--line);
+  }
+  .trust-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 36px; text-align: center;
+  }
+  @media (max-width: 780px) { .trust-grid { grid-template-columns: repeat(2, 1fr); gap: 28px; } }
+  .trust-item .num {
+    font-family: var(--serif); font-size: 44px; font-weight: 600;
+    color: var(--navy); display: block; line-height: 1;
+  }
+  .trust-item .num em { color: var(--sage); font-style: normal; }
+  .trust-item .lbl {
+    font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
+    color: var(--ink-soft); margin-top: 10px; font-weight: 600;
+  }
+
+  /* ---- SECTION BASE ---- */
+  section { padding: 100px 0; }
+  .section-header { text-align: center; max-width: 820px; margin: 0 auto 60px; }
+  .section-eyebrow {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--sage); margin-bottom: 16px;
+  }
+  .section-title {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(34px, 4.4vw, 52px); line-height: 1.09;
+    color: var(--navy); margin-bottom: 20px; letter-spacing: -0.015em;
+  }
+  .section-title em { color: var(--clay); font-style: italic; font-weight: 600; }
+  .section-sub { font-size: 18px; color: var(--ink-soft); line-height: 1.65; }
+
+  /* ---- ABOUT / STORY ---- */
+  .about { background: var(--bone); }
+  .about-grid {
+    display: grid; grid-template-columns: 1fr 1.35fr; gap: 72px; align-items: center;
+  }
+  @media (max-width: 980px) { .about-grid { grid-template-columns: 1fr; gap: 44px; } }
+
+  /* About clinic photo */
+  .about-art {
+    aspect-ratio: 4/5; border-radius: 5px; overflow: hidden;
+    position: relative;
+    box-shadow: 0 28px 60px rgba(31,58,82,0.22);
+  }
+  .about-art img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .about-art-overlay {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    padding: 28px 28px 24px;
+    background: linear-gradient(to top, rgba(31,58,82,0.82), transparent);
+    display: flex; flex-direction: column; align-items: flex-start;
+  }
+  .about-art-label {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.26em; text-transform: uppercase;
+    color: var(--sage-soft); margin-bottom: 8px;
+  }
+  .about-art-headline {
+    font-family: var(--serif); font-size: 22px; font-style: italic; line-height: 1.25;
+    color: var(--cream);
+  }
+
+  .about-content h2 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(32px, 4vw, 48px); line-height: 1.11;
+    color: var(--navy); margin-bottom: 22px; letter-spacing: -0.01em;
+  }
+  .about-content h2 em { color: var(--sage); font-style: italic; font-weight: 600; }
+  .about-content p {
+    font-size: 17px; color: var(--ink-soft); margin-bottom: 18px; line-height: 1.72;
+  }
+  .about-pull {
+    font-family: var(--serif); font-style: italic;
+    font-size: 22px; color: var(--navy); padding: 24px 0;
+    border-top: 1px solid var(--line); border-bottom: 1px solid var(--line);
+    margin: 28px 0; line-height: 1.45;
+  }
+
+  /* ---- PRENATAL SPECIALTY ---- */
+  .specialty { background: var(--navy); color: var(--cream); position: relative; overflow: hidden; }
+  .specialty::before {
+    content: ''; position: absolute; top: -20%; right: -10%;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(92,140,122,0.24), transparent 60%);
+    filter: blur(72px); pointer-events: none;
+  }
+  .specialty-grid {
+    display: grid; grid-template-columns: 1.1fr 1fr; gap: 68px; align-items: center;
+    position: relative; z-index: 2;
+  }
+  @media (max-width: 980px) { .specialty-grid { grid-template-columns: 1fr; gap: 48px; } }
+
+  .specialty-content h2 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(30px, 4vw, 48px); line-height: 1.1;
+    color: var(--cream); margin-bottom: 22px; letter-spacing: -0.01em;
+  }
+  .specialty-content h2 em { color: var(--warm); font-style: italic; font-weight: 600; }
+  .specialty-content p {
+    font-size: 17px; color: rgba(247,243,236,0.84); margin-bottom: 18px; line-height: 1.72;
+  }
+  .specialty-pull {
+    font-family: var(--serif); font-style: italic;
+    font-size: 22px; color: var(--cream); padding: 22px 0;
+    border-top: 1px solid rgba(201,168,120,0.28);
+    border-bottom: 1px solid rgba(201,168,120,0.28);
+    margin: 28px 0; line-height: 1.42;
+  }
+  .specialty-list { list-style: none; margin-top: 6px; }
+  .specialty-list li {
+    font-size: 15px; color: rgba(247,243,236,0.9);
+    padding: 10px 0 10px 28px; position: relative;
+    border-bottom: 1px solid rgba(201,168,120,0.14);
+  }
+  .specialty-list li:last-child { border-bottom: none; }
+  .specialty-list li::before {
+    content: ''; position: absolute; left: 0; top: 16px;
+    width: 8px; height: 8px; border-radius: 50%;
+    background: var(--sage-soft);
+  }
+  .specialty-list strong { color: var(--cream); }
+
+  /* Specialty photo block */
+  .specialty-art {
+    aspect-ratio: 1/1.1; border-radius: 5px; overflow: hidden;
+    position: relative;
+    box-shadow: 0 28px 64px rgba(0,0,0,0.34);
+  }
+  .specialty-art img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+  }
+  .specialty-art-overlay {
+    position: absolute; bottom: 0; left: 0; right: 0;
+    padding: 28px 28px 26px;
+    background: linear-gradient(to top, rgba(20,38,57,0.88), transparent);
+    text-align: center;
+  }
+  .specialty-art-tag {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.24em; text-transform: uppercase;
+    color: var(--sage-soft); margin-bottom: 10px;
+  }
+  .specialty-art-hl {
+    font-family: var(--serif); font-size: 22px; font-style: italic; line-height: 1.3;
+    color: var(--cream);
+  }
+
+  /* ---- SERVICES ---- */
+  .services { background: var(--cream); }
+  .services-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px;
+  }
+  @media (max-width: 1040px) { .services-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 680px) { .services-grid { grid-template-columns: 1fr; } }
+  .service-card {
+    background: var(--white); border: 1px solid var(--line);
+    border-radius: 5px; padding: 34px 30px;
+    position: relative; overflow: hidden; transition: all 0.3s;
+  }
+  .service-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: var(--sage-soft); transform: scaleX(0); transform-origin: left;
+    transition: transform 0.35s;
+  }
+  .service-card:hover { border-color: var(--sage-soft); transform: translateY(-4px); box-shadow: 0 16px 40px rgba(31,58,82,0.10); }
+  .service-card:hover::before { transform: scaleX(1); }
+  .service-card.featured { border-color: var(--sage); background: linear-gradient(180deg, var(--white) 0%, #f4faf7 100%); }
+  .service-card.featured::before { transform: scaleX(1); background: var(--sage); }
+  .service-icon { margin-bottom: 16px; }
+  .service-tag {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--sage); margin-bottom: 10px; display: block;
+  }
+  .service-card h3 {
+    font-family: var(--serif); font-size: 24px; font-weight: 600;
+    color: var(--navy); margin-bottom: 12px; line-height: 1.22;
+  }
+  .service-card p { font-size: 15px; color: var(--ink-soft); line-height: 1.66; margin-bottom: 18px; }
+  .service-card ul { list-style: none; }
+  .service-card li {
+    font-size: 14px; color: var(--ink-soft); padding-left: 22px;
+    position: relative; margin-bottom: 8px; line-height: 1.5;
+  }
+  .service-card li::before {
+    content: ''; position: absolute; left: 0; top: 7px;
+    width: 7px; height: 7px; border-radius: 50%; background: var(--sage-soft);
+  }
+
+  /* ---- DOCTORS ---- */
+  .doctors { background: var(--bone); }
+  .doctors-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px;
+    max-width: 900px; margin: 0 auto;
+  }
+  @media (max-width: 680px) { .doctors-grid { grid-template-columns: 1fr; } }
+  .doctor-card {
+    background: var(--white); border: 1px solid var(--line);
+    border-radius: 5px; overflow: hidden;
+    transition: all 0.3s;
+  }
+  .doctor-card:hover { transform: translateY(-4px); box-shadow: 0 18px 44px rgba(31,58,82,0.10); border-color: var(--sage-soft); }
+  .doctor-banner {
+    padding: 0;
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .doctor-photo {
+    width: 100%; height: 260px; object-fit: cover; object-position: top center; display: block;
+  }
+  .doctor-banner-info {
+    padding: 22px 28px 20px;
+    width: 100%;
+    background: linear-gradient(145deg, var(--rose-soft), #e8dece);
+  }
+  .doctor-banner.joe .doctor-banner-info {
+    background: linear-gradient(145deg, #dbe8e1, var(--bone));
+  }
+  .doctor-banner h3 {
+    font-family: var(--serif); font-size: 24px; font-weight: 600;
+    color: var(--navy); margin-bottom: 4px; line-height: 1.2;
+  }
+  .doctor-banner .role {
+    font-size: 12px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase;
+    color: var(--sage); margin-bottom: 10px;
+  }
+  .doctor-banner p { font-size: 13px; color: var(--ink-soft); line-height: 1.6; }
+  .doctor-body { padding: 24px 28px 28px; }
+  .doctor-body ul { list-style: none; }
+  .doctor-body li {
+    font-size: 14px; color: var(--ink-soft); padding: 8px 0 8px 22px;
+    position: relative; border-bottom: 1px solid var(--line); line-height: 1.5;
+  }
+  .doctor-body li:last-child { border-bottom: none; }
+  .doctor-body li::before {
+    content: ''; position: absolute; left: 0; top: 15px;
+    width: 7px; height: 7px; border-radius: 50%; background: var(--sage-soft);
+  }
+  .doctor-body strong { color: var(--navy); }
+
+  /* ---- LOCATIONS ---- */
+  .locations { background: var(--white); }
+  .locations-grid {
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px;
+    max-width: 980px; margin: 0 auto;
+  }
+  @media (max-width: 820px) { .locations-grid { grid-template-columns: 1fr; max-width: 520px; } }
+  .location-card {
+    border: 1px solid var(--line); border-radius: 5px; overflow: hidden;
+    transition: all 0.3s;
+  }
+  .location-card:hover { border-color: var(--sage-soft); transform: translateY(-4px); box-shadow: 0 18px 44px rgba(31,58,82,0.10); }
+  .location-banner {
+    padding: 38px 28px; text-align: center;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+  }
+  .location-banner.gb { background: linear-gradient(148deg, var(--sage), var(--navy)); }
+  .location-banner.al { background: linear-gradient(148deg, var(--sage-soft), var(--navy-deep)); }
+  .location-banner-tag {
+    font-size: 11px; font-weight: 700; letter-spacing: 0.22em; text-transform: uppercase;
+    color: rgba(247,243,236,0.8); margin-bottom: 10px;
+  }
+  .location-banner-name {
+    font-family: var(--serif); font-size: 30px; font-weight: 600;
+    color: var(--white); line-height: 1.1; margin-bottom: 6px;
+  }
+  .location-banner-addr {
+    font-size: 13px; font-weight: 500; letter-spacing: 0.08em;
+    color: rgba(247,243,236,0.88);
+  }
+  .location-body { background: var(--white); padding: 28px 28px 30px; }
+  .location-body h3 {
+    font-family: var(--serif); font-size: 21px; font-weight: 600;
+    color: var(--navy); margin-bottom: 10px; line-height: 1.25;
+  }
+  .location-body p { font-size: 14px; color: var(--ink-soft); line-height: 1.65; margin-bottom: 14px; }
+  .location-details { list-style: none; border-top: 1px solid var(--line); padding-top: 14px; }
+  .location-details li {
+    font-size: 13px; color: var(--ink-soft);
+    padding: 6px 0 6px 22px; position: relative; line-height: 1.5;
+  }
+  .location-details li::before {
+    content: ''; position: absolute; left: 0; top: 13px;
+    width: 7px; height: 7px; border-radius: 50%; background: var(--warm);
+  }
+  .location-details strong { color: var(--navy); }
+  .location-details a { color: var(--sage); font-weight: 600; }
+  .location-details a:hover { color: var(--sage-deep); text-decoration: underline; }
+
+  /* ---- CLINIC PHOTO STRIP ---- */
+  .photo-strip {
+    background: var(--navy-deep); padding: 0; overflow: hidden;
+  }
+  .photo-strip-inner {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
+    height: 280px;
+  }
+  @media (max-width: 780px) {
+    .photo-strip-inner { grid-template-columns: repeat(2, 1fr); height: 400px; }
+  }
+  @media (max-width: 480px) {
+    .photo-strip-inner { grid-template-columns: 1fr 1fr; height: 360px; }
+  }
+  .photo-strip-item {
+    overflow: hidden; position: relative;
+  }
+  .photo-strip-item img {
+    width: 100%; height: 100%; object-fit: cover; display: block;
+    transition: transform 0.55s ease;
+  }
+  .photo-strip-item:hover img { transform: scale(1.06); }
+
+  /* ---- AREAS SERVED ---- */
+  .areas { background: var(--bone); }
+  .areas-grid {
+    display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+    max-width: 980px; margin: 0 auto;
+  }
+  @media (max-width: 900px) { .areas-grid { grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 600px) { .areas-grid { grid-template-columns: repeat(2, 1fr); } }
+  .area-pill {
+    background: var(--white); border: 1px solid var(--line);
+    border-radius: 3px; padding: 16px 18px; text-align: center;
+    transition: all 0.25s;
+  }
+  .area-pill:hover { border-color: var(--sage-soft); transform: translateY(-2px); box-shadow: 0 8px 22px rgba(31,58,82,0.08); }
+  .area-pill .city {
+    font-family: var(--serif); font-size: 18px; font-weight: 600; color: var(--navy); line-height: 1.2;
+  }
+  .area-pill .note {
+    font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase;
+    color: var(--ink-soft); margin-top: 4px; font-weight: 600;
+  }
+  .areas-note {
+    text-align: center; margin-top: 40px;
+    font-size: 14px; color: var(--ink-soft); font-style: italic;
+  }
+
+  /* ---- NEW PATIENTS ---- */
+  .newpatients { background: var(--cream); }
+  .steps-grid {
+    display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 12px;
+  }
+  @media (max-width: 860px) { .steps-grid { grid-template-columns: 1fr; max-width: 500px; margin: 12px auto 0; } }
+  .step {
+    background: var(--white); border: 1px solid var(--line);
+    border-radius: 5px; padding: 34px 28px;
+  }
+  .step-num {
+    font-family: var(--serif); font-size: 48px; font-weight: 600;
+    color: var(--sage-soft); line-height: 1; margin-bottom: 16px;
+  }
+  .step h4 {
+    font-family: var(--serif); font-size: 22px; font-weight: 600;
+    color: var(--navy); margin-bottom: 10px; line-height: 1.25;
+  }
+  .step p { font-size: 14px; color: var(--ink-soft); line-height: 1.65; }
+
+  /* ---- FAQ ---- */
+  .faq { background: var(--bone); }
+  .faq-grid { max-width: 900px; margin: 0 auto; display: grid; gap: 16px; }
+  .faq-item {
+    background: var(--white); border: 1px solid var(--line);
+    border-radius: 5px; padding: 28px 30px; transition: all 0.25s;
+  }
+  .faq-item:hover { border-color: var(--sage-soft); }
+  .faq-item h4 {
+    font-family: var(--serif); font-size: 21px; font-weight: 600;
+    color: var(--navy); margin-bottom: 12px; line-height: 1.28;
+  }
+  .faq-item p { font-size: 15px; color: var(--ink-soft); line-height: 1.7; }
+
+  /* ---- FINAL CTA ---- */
+  .final-cta {
+    background: linear-gradient(140deg, var(--sage-deep) 0%, var(--navy) 100%);
+    color: var(--cream); text-align: center; padding: 114px 0;
+    position: relative; overflow: hidden;
+  }
+  .final-cta::before {
+    content: ''; position: absolute; top: -30%; left: 50%; transform: translateX(-50%);
+    width: 800px; height: 800px;
+    background: radial-gradient(circle, rgba(201,168,120,0.22), transparent 58%);
+    filter: blur(72px); pointer-events: none;
+  }
+  .final-cta .container { position: relative; z-index: 2; }
+  .final-cta h2 {
+    font-family: var(--serif); font-weight: 500;
+    font-size: clamp(36px, 5vw, 54px); line-height: 1.09;
+    margin-bottom: 22px; letter-spacing: -0.015em;
+  }
+  .final-cta h2 em { color: var(--warm); font-style: italic; font-weight: 600; }
+  .final-cta p {
+    font-size: 19px; color: rgba(247,243,236,0.88);
+    max-width: 640px; margin: 0 auto 44px; line-height: 1.65;
+  }
+  .final-actions { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; align-items: center; }
+  .phone-block {
+    font-family: var(--serif); font-size: 26px; font-weight: 600;
+    color: var(--cream); display: flex; align-items: center; gap: 14px;
+  }
+  .phone-block small {
+    display: block; font-family: var(--sans);
+    font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase;
+    color: rgba(247,243,236,0.72); font-weight: 600; margin-bottom: 3px;
+  }
+
+  /* ---- FOOTER ---- */
+  footer {
+    background: var(--navy-deep); color: rgba(247,243,236,0.68);
+    padding: 72px 0 36px;
+  }
+  .foot-grid {
+    display: grid; grid-template-columns: 1.7fr 1fr 1fr 1fr; gap: 52px; margin-bottom: 48px;
+  }
+  @media (max-width: 980px) { .foot-grid { grid-template-columns: 1fr 1fr; gap: 36px; } }
+  @media (max-width: 560px) { .foot-grid { grid-template-columns: 1fr; gap: 30px; } }
+  .foot-brand {
+    font-family: var(--serif); font-size: 22px; color: var(--cream);
+    margin-bottom: 14px; font-weight: 600; line-height: 1.2;
+  }
+  .foot-brand small {
+    display: block; font-family: var(--sans);
+    font-size: 10px; letter-spacing: 0.22em; text-transform: uppercase;
+    color: var(--sage-soft); font-weight: 600; margin-top: 4px;
+  }
+  .foot-byline { font-size: 14px; line-height: 1.7; margin-bottom: 18px; }
+  footer h5 {
+    color: var(--warm); font-size: 11px; letter-spacing: 0.22em; text-transform: uppercase;
+    margin-bottom: 16px; font-weight: 700;
+  }
+  footer ul { list-style: none; }
+  footer li { margin-bottom: 9px; font-size: 14px; line-height: 1.5; }
+  footer a:hover { color: var(--sage-soft); }
+  .foot-bottom {
+    border-top: 1px solid rgba(201,168,120,0.16); padding-top: 26px;
+    font-size: 12px; line-height: 1.7;
+  }
+  .foot-bottom-row {
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 16px;
+  }
+  .foot-disclaimer {
+    font-size: 11px; color: rgba(247,243,236,0.44); line-height: 1.7;
+    border-top: 1px solid rgba(201,168,120,0.10); padding-top: 16px; margin-top: 6px;
+  }
+  .demo-link { color: var(--sage-soft); text-decoration: underline; text-underline-offset: 3px; }
+  .demo-link:hover { color: var(--cream); }
+
+  /* ---- SCROLL REVEAL ---- */
+  @media (prefers-reduced-motion: no-preference) {
+    .reveal {
+      opacity: 0; transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .reveal.visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: 0.10s; }
+    .reveal-delay-2 { transition-delay: 0.20s; }
+    .reveal-delay-3 { transition-delay: 0.30s; }
+    .reveal-delay-4 { transition-delay: 0.40s; }
+    .reveal-delay-5 { transition-delay: 0.50s; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header id="site-header">
+  <div class="container nav">
+    <a href="./" class="brand">
+      Family First Chiropractic
+      <small>Green Bay &middot; Algoma &middot; Prenatal and Pediatric Care</small>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="#about">Our Practice</a>
+      <a href="#specialty">Prenatal and Pediatric</a>
+      <a href="#services">Care We Offer</a>
+      <a href="#locations">Clinics</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="tel:9209408711" class="cta-btn">Book a Visit</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" aria-label="Welcome">
+  <div class="hero-bg-photo" aria-hidden="true" role="presentation"></div>
+  <div class="container">
+    <div class="hero-inner">
+      <div>
+        <div class="hero-eyebrow">Green Bay and Algoma, Wisconsin</div>
+        <h1>Chiropractic care for <em>expecting moms, newborns, and the whole family.</em></h1>
+        <p class="hero-sub">Family First Chiropractic is a family-wellness practice focused on preconception, prenatal, pediatric, and postpartum care. Dr. Jodi Rabas, DC and Dr. Joe Huss, DC. Two clinics in Green Bay and Algoma.</p>
+        <div class="hero-actions">
+          <a href="tel:9209408711" class="cta-btn">Call (920) 940-8711</a>
+          <a href="#locations" class="cta-btn cta-btn-outline">Find a Clinic</a>
+        </div>
+        <div class="hero-chips">
+          <span class="chip">Prenatal and Preconception</span>
+          <span class="chip">Webster Technique</span>
+          <span class="chip">Pediatric Chiropractic</span>
+          <span class="chip">Green Bay and Algoma, WI</span>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-label">A Family-Wellness Practice</div>
+        <h3>Two doctors. Two clinics. One family focus.</h3>
+        <div class="hero-card-rule"></div>
+        <div class="hero-card-row">
+          <span class="num">2</span>
+          <div class="txt"><strong>Credentialed doctors</strong>Dr. Jodi Rabas, DC and Dr. Joe Huss, DC, providing prenatal, pediatric, and family chiropractic care.</div>
+        </div>
+        <div class="hero-card-row">
+          <span class="num">2</span>
+          <div class="txt"><strong>Clinics across two counties</strong>Green Bay (Brown County) three days a week, Algoma (Kewaunee County) every Tuesday.</div>
+        </div>
+        <div class="hero-card-row">
+          <span class="num">1</span>
+          <div class="txt"><strong>Defined specialty</strong>Preconception, prenatal, postpartum, pediatric, and family-wellness care from before pregnancy through childhood.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-arc" aria-hidden="true">
+    <svg viewBox="0 0 1440 80" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <path d="M0 80 Q720 0 1440 80 L1440 80 L0 80 Z" fill="#f7f3ec"/>
+    </svg>
+  </div>
+</section>
+
+<!-- TRUST STRIP -->
+<div class="trust" role="region" aria-label="Practice at a glance">
+  <div class="container trust-grid">
+    <div class="trust-item reveal">
+      <span class="num">2</span>
+      <div class="lbl">Doctors of Chiropractic</div>
+    </div>
+    <div class="trust-item reveal reveal-delay-1">
+      <span class="num">2</span>
+      <div class="lbl">Clinics, Two Counties</div>
+    </div>
+    <div class="trust-item reveal reveal-delay-2">
+      <span class="num">1</span>
+      <div class="lbl">Family-Wellness Specialty</div>
+    </div>
+    <div class="trust-item reveal reveal-delay-3">
+      <span class="num">100<em>%</em></span>
+      <div class="lbl">Prenatal and Pediatric Focus</div>
+    </div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="about" aria-labelledby="about-heading">
+  <div class="container about-grid">
+    <div class="about-art reveal">
+      <img
+        src="https://cdcssl.ibsrv.net/ibimg/smb/942x627_80/webmgr/0m/u/7/gallery/Jodi-2.jpg.webp"
+        alt="Family First Chiropractic clinic building at 443 S. Jackson Street, Green Bay"
+        loading="lazy"
+        width="942" height="627"
+      >
+      <div class="about-art-overlay" aria-hidden="true">
+        <div class="about-art-label">Green Bay Clinic</div>
+        <div class="about-art-headline">443 S. Jackson Street, Green Bay</div>
+      </div>
+    </div>
+    <div class="about-content">
+      <div class="section-eyebrow" style="text-align:left;">Our Practice</div>
+      <h2 id="about-heading">A practice built around <em>preconception, pregnancy, and the early years.</em></h2>
+      <p>Family First Chiropractic is a two-practitioner family-wellness practice in Northeast Wisconsin. Dr. Jodi Rabas, DC and Dr. Joe Huss, DC see patients at 443 S. Jackson Street in Green Bay three days a week, and at 305 Steele Street in Algoma every Tuesday.</p>
+      <p>The specialty is the practice. Preconception care for couples preparing for pregnancy. Prenatal chiropractic across the full pregnancy window. Webster Technique territory. Postpartum care. Pediatric chiropractic from the newborn period through childhood-development stages. The work spans the family lifecycle, not just the single-visit patient.</p>
+      <div class="about-pull reveal">"The mother who chooses this practice for pregnancy often brings the newborn, then the toddler, then the school-age child. That is the relationship Family First Chiropractic is built to hold."</div>
+      <p>The Algoma clinic is not a vanity address. It is a real weekly practice day in a Kewaunee County community where very few family chiropractors have a presence. Two counties, one practice, one tightly defined specialty.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRENATAL AND PEDIATRIC SPECIALTY -->
+<section id="specialty" class="specialty" aria-labelledby="specialty-heading">
+  <div class="container specialty-grid">
+    <div class="specialty-content">
+      <div class="section-eyebrow" style="text-align:left;">The Specialty</div>
+      <h2 id="specialty-heading">Prenatal, pediatric, and family chiropractic care <em>from preconception to childhood.</em></h2>
+      <p>It is rare for a chiropractic practice to commit this fully to a single named specialty. Family First Chiropractic is not a general chiropractor that sometimes sees pregnant mothers. The specialty is the entire shape of the practice.</p>
+      <ul class="specialty-list">
+        <li><strong>Preconception care</strong> for couples preparing for pregnancy</li>
+        <li><strong>Prenatal chiropractic</strong> across the pregnancy window, in Webster Technique territory</li>
+        <li><strong>Webster Technique</strong>, a specific named prenatal chiropractic approach</li>
+        <li><strong>Postpartum care</strong> for mothers after birth</li>
+        <li><strong>Newborn and infant chiropractic</strong> from the earliest weeks of life</li>
+        <li><strong>Pediatric chiropractic</strong> across childhood-development stages</li>
+        <li><strong>Family wellness</strong> for the whole household over the long term</li>
+      </ul>
+      <div class="specialty-pull reveal">"When a chiropractic practice is built for the family lifecycle, a first visit during pregnancy becomes care that continues across children and years."</div>
+    </div>
+    <div class="specialty-art reveal">
+      <img
+        src="https://cdcssl.ibsrv.net/ibimg/smb/1048x698_80/webmgr/0m/u/7/gallery/Jodi-317.jpg.webp"
+        alt="Dr. Jodi Rabas providing chiropractic care at Family First Chiropractic"
+        loading="lazy"
+        width="1048" height="698"
+      >
+      <div class="specialty-art-overlay" aria-hidden="true">
+        <div class="specialty-art-tag">Webster Technique Territory</div>
+        <div class="specialty-art-hl">Prenatal and pediatric care for expecting moms and growing families.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services" aria-labelledby="services-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Care We Offer</div>
+      <h2 class="section-title" id="services-heading">Chiropractic care across <em>every stage of the family journey.</em></h2>
+      <p class="section-sub">From couples preparing for pregnancy to children growing up, Family First Chiropractic offers chiropractic support across the whole family lifecycle.</p>
+    </div>
+    <div class="services-grid">
+
+      <div class="service-card featured reveal">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="17" stroke="#5c8c7a" stroke-width="1.5"/>
+            <path d="M18 8 C18 8 11 14 11 20 C11 24.4 14 28 18 28 C22 28 25 24.4 25 20 C25 14 18 8 18 8Z" fill="rgba(92,140,122,0.14)" stroke="#5c8c7a" stroke-width="1.4"/>
+            <circle cx="18" cy="17" r="3.5" fill="rgba(92,140,122,0.3)" stroke="#5c8c7a" stroke-width="1.2"/>
+          </svg>
+        </div>
+        <span class="service-tag">Prenatal</span>
+        <h3>Prenatal Chiropractic Care</h3>
+        <p>Chiropractic care during pregnancy, in a practice built specifically for expecting mothers. Dr. Rabas and Dr. Huss both work with prenatal patients in Webster Technique territory.</p>
+        <ul>
+          <li>Care across the full pregnancy window</li>
+          <li>Webster Technique approach</li>
+          <li>Comfortable positioning for all trimesters</li>
+          <li>Green Bay and Algoma clinic options</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal reveal-delay-1">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="17" stroke="#5c8c7a" stroke-width="1.5"/>
+            <circle cx="18" cy="14" r="5" fill="rgba(92,140,122,0.18)" stroke="#5c8c7a" stroke-width="1.4"/>
+            <path d="M10 28 C10 23.6 13.6 20 18 20 C22.4 20 26 23.6 26 28" stroke="#5c8c7a" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="service-tag">Preconception</span>
+        <h3>Preconception Care</h3>
+        <p>Chiropractic support for couples preparing for pregnancy. The practice sees preconception patients as part of its family-lifecycle model, before pregnancy begins.</p>
+        <ul>
+          <li>Support for couples preparing for pregnancy</li>
+          <li>Part of the ongoing family-wellness relationship</li>
+          <li>Both Green Bay and Algoma clinics available</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal reveal-delay-2">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="17" stroke="#5c8c7a" stroke-width="1.5"/>
+            <ellipse cx="18" cy="22" rx="7" ry="5" fill="rgba(92,140,122,0.14)" stroke="#5c8c7a" stroke-width="1.4"/>
+            <circle cx="18" cy="12" r="3.5" fill="rgba(92,140,122,0.22)" stroke="#5c8c7a" stroke-width="1.2"/>
+            <path d="M13 22 C13 18 15.7 15.5 18 15.5 C20.3 15.5 23 18 23 22" stroke="#5c8c7a" stroke-width="1.2" fill="none"/>
+          </svg>
+        </div>
+        <span class="service-tag">Pediatric</span>
+        <h3>Pediatric and Infant Chiropractic</h3>
+        <p>Pediatric chiropractic care from the newborn period through childhood-development stages. Every pediatric reference at this practice is written and delivered in generic, non-outcome-promise form.</p>
+        <ul>
+          <li>Newborn and infant care from the earliest weeks</li>
+          <li>Childhood-development stage care</li>
+          <li>Gentle approaches appropriate for small patients</li>
+          <li>Both clinic locations available</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal reveal-delay-3">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="17" stroke="#5c8c7a" stroke-width="1.5"/>
+            <path d="M12 24 C12 20 14.7 17.5 18 17.5 C21.3 17.5 24 20 24 24" stroke="#5c8c7a" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+            <circle cx="18" cy="13" r="4" fill="rgba(92,140,122,0.18)" stroke="#5c8c7a" stroke-width="1.4"/>
+            <path d="M18 26 L18 29" stroke="#5c8c7a" stroke-width="1.4" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="service-tag">Postpartum</span>
+        <h3>Postpartum Care</h3>
+        <p>Chiropractic care for mothers after birth. The practice sees postpartum patients as a natural continuation of the prenatal care relationship, not a separate one-time visit.</p>
+        <ul>
+          <li>Continuing care after delivery</li>
+          <li>Familiar practitioners who know your history</li>
+          <li>Both clinics available for postpartum appointments</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal reveal-delay-4">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="17" stroke="#5c8c7a" stroke-width="1.5"/>
+            <path d="M10 22 L14 18 L18 22 L22 16 L26 20" stroke="#5c8c7a" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <circle cx="10" cy="22" r="2" fill="rgba(92,140,122,0.4)"/>
+            <circle cx="26" cy="20" r="2" fill="rgba(92,140,122,0.4)"/>
+          </svg>
+        </div>
+        <span class="service-tag">Family Wellness</span>
+        <h3>Ongoing Family Wellness</h3>
+        <p>Siblings, partners, and the wider household are welcome. Family First Chiropractic is a household-level practice, not a single-visit clinic. Families come back across pregnancies and years.</p>
+        <ul>
+          <li>Whole-household care welcome</li>
+          <li>Siblings and partners alongside prenatal and pediatric patients</li>
+          <li>A practice built to know families over time</li>
+        </ul>
+      </div>
+
+      <div class="service-card reveal reveal-delay-5">
+        <div class="service-icon" aria-hidden="true">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="18" cy="18" r="17" stroke="#5c8c7a" stroke-width="1.5"/>
+            <rect x="11" y="12" width="14" height="13" rx="2" fill="rgba(92,140,122,0.14)" stroke="#5c8c7a" stroke-width="1.4"/>
+            <path d="M15 12 L15 10 M21 12 L21 10" stroke="#5c8c7a" stroke-width="1.4" stroke-linecap="round"/>
+            <path d="M14 18 L17 21 L22 15" stroke="#5c8c7a" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </div>
+        <span class="service-tag">New Patients</span>
+        <h3>New Patient Welcome</h3>
+        <p>Both clinics welcome new prenatal, pediatric, and family-wellness patients. One number for both locations. The first visit includes a history review, a thorough exam, and a plan that fits your family.</p>
+        <ul>
+          <li>New patients welcome at both clinics</li>
+          <li>One number: <a href="tel:9209408711" style="color:var(--sage); font-weight:600;">(920) 940-8711</a></li>
+          <li>First visit: history, exam, and a care plan</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DOCTORS -->
+<section id="doctors" class="doctors" aria-labelledby="doctors-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">The Doctors</div>
+      <h2 class="section-title" id="doctors-heading">Two practitioners. <em>One shared specialty.</em></h2>
+      <p class="section-sub">Dr. Jodi Rabas, DC and Dr. Joe Huss, DC both provide prenatal, preconception, postpartum, pediatric, and family-wellness chiropractic care across the Green Bay and Algoma clinics.</p>
+    </div>
+    <div class="doctors-grid">
+
+      <div class="doctor-card reveal">
+        <div class="doctor-banner jodi">
+          <img
+            class="doctor-photo"
+            src="https://cdcssl.ibsrv.net/ibimg/smb/900x599_80/webmgr/0m/u/7/gallery/Jodi-49.jpg.webp"
+            alt="Dr. Jodi Rabas, DC - Family First Chiropractic"
+            loading="lazy"
+            width="900" height="599"
+          >
+          <div class="doctor-banner-info">
+            <h3>Dr. Jodi Rabas, DC</h3>
+            <div class="role">Doctor of Chiropractic</div>
+            <p>Prenatal, preconception, postpartum, pediatric, and family-wellness chiropractic care. Green Bay and Algoma clinics.</p>
+          </div>
+        </div>
+        <div class="doctor-body">
+          <ul>
+            <li><strong>Specialty:</strong> Prenatal, preconception, pediatric, and family chiropractic</li>
+            <li><strong>Approach:</strong> Webster Technique territory</li>
+            <li><strong>Clinics:</strong> Green Bay (Mon, Wed, Fri) and Algoma (Tuesdays)</li>
+            <li><strong>Credential details:</strong> Confirmed at intake</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="doctor-card reveal reveal-delay-1">
+        <div class="doctor-banner joe">
+          <img
+            class="doctor-photo"
+            src="https://cdcssl.ibsrv.net/ibimg/smb/570x760_80/webmgr/0m/u/7/Dr.%20Joe.jpeg.webp"
+            alt="Dr. Joe Huss, DC - Family First Chiropractic"
+            loading="lazy"
+            width="570" height="760"
+          >
+          <div class="doctor-banner-info">
+            <h3>Dr. Joe Huss, DC</h3>
+            <div class="role">Doctor of Chiropractic</div>
+            <p>Prenatal, preconception, postpartum, pediatric, and family-wellness chiropractic care. Green Bay and Algoma clinics.</p>
+          </div>
+        </div>
+        <div class="doctor-body">
+          <ul>
+            <li><strong>Specialty:</strong> Prenatal, preconception, pediatric, and family chiropractic</li>
+            <li><strong>Approach:</strong> Webster Technique territory</li>
+            <li><strong>Clinics:</strong> Green Bay (Mon, Wed, Fri) and Algoma (Tuesdays)</li>
+            <li><strong>Credential details:</strong> Confirmed at intake</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CLINIC PHOTO STRIP -->
+<div class="photo-strip" role="region" aria-label="Family First Chiropractic clinic photos">
+  <div class="photo-strip-inner">
+    <div class="photo-strip-item">
+      <img
+        src="https://cdcssl.ibsrv.net/ibimg/smb/1064x708_80/webmgr/0m/u/7/gallery/Jodi-156.jpg.webp"
+        alt="Family First Chiropractic care session"
+        loading="lazy"
+        width="1064" height="708"
+      >
+    </div>
+    <div class="photo-strip-item">
+      <img
+        src="https://cdcssl.ibsrv.net/ibimg/smb/1064x708_80/webmgr/0m/u/7/gallery/Jodi-200.jpg.webp"
+        alt="Family First Chiropractic prenatal chiropractic care"
+        loading="lazy"
+        width="1064" height="708"
+      >
+    </div>
+    <div class="photo-strip-item">
+      <img
+        src="https://cdcssl.ibsrv.net/ibimg/smb/1064x708_80/webmgr/0m/u/7/gallery/Jodi-261.jpg.webp"
+        alt="Family First Chiropractic pediatric chiropractic session"
+        loading="lazy"
+        width="1064" height="708"
+      >
+    </div>
+    <div class="photo-strip-item">
+      <img
+        src="https://cdcssl.ibsrv.net/ibimg/smb/1029x685_80/webmgr/0m/u/7/gallery/Jodi-518.jpg.webp"
+        alt="Family First Chiropractic family wellness care"
+        loading="lazy"
+        width="1029" height="685"
+      >
+    </div>
+  </div>
+</div>
+
+<!-- LOCATIONS -->
+<section id="locations" class="locations" aria-labelledby="locations-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Two Clinics</div>
+      <h2 class="section-title" id="locations-heading">Green Bay and Algoma: <em>one practice, two counties.</em></h2>
+      <p class="section-sub">The Green Bay clinic on South Jackson Street is the main practice, open three days a week. The Algoma clinic on Steele Street is open every Tuesday and serves Kewaunee County families, with very little other family-wellness chiropractic competition in that area.</p>
+    </div>
+    <div class="locations-grid">
+
+      <div class="location-card reveal">
+        <div class="location-banner gb">
+          <div class="location-banner-tag">Brown County, Main Clinic</div>
+          <div class="location-banner-name">Green Bay</div>
+          <div class="location-banner-addr">443 S. Jackson Street</div>
+        </div>
+        <div class="location-body">
+          <h3>The Green Bay practice for the whole family.</h3>
+          <p>The main Family First Chiropractic location at 443 S. Jackson Street in Green Bay. Open three days a week with Dr. Rabas and Dr. Huss seeing preconception, prenatal, postpartum, pediatric, and family-wellness patients.</p>
+          <ul class="location-details">
+            <li><strong>Address:</strong> 443 S. Jackson Street, Green Bay, WI</li>
+            <li><strong>Phone:</strong> <a href="tel:9209408711">(920) 940-8711</a></li>
+            <li><strong>Hours:</strong> Three days per week (call to confirm)</li>
+            <li><strong>Service area:</strong> Green Bay metro, De Pere, Howard, Allouez, Ashwaubenon</li>
+            <li><strong>Specialty:</strong> Prenatal, preconception, pediatric, Webster Technique</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="location-card reveal reveal-delay-1">
+        <div class="location-banner al">
+          <div class="location-banner-tag">Kewaunee County, Satellite Clinic</div>
+          <div class="location-banner-name">Algoma</div>
+          <div class="location-banner-addr">305 Steele Street, Tuesdays</div>
+        </div>
+        <div class="location-body">
+          <h3>The Algoma clinic for Kewaunee County families.</h3>
+          <p>The Algoma clinic at 305 Steele Street is open every Tuesday. A real weekly practice day for Kewaunee County families, along the Lake Michigan coast, where very few family chiropractors have a presence.</p>
+          <ul class="location-details">
+            <li><strong>Address:</strong> 305 Steele Street, Algoma, WI</li>
+            <li><strong>Phone:</strong> <a href="tel:9209408711">(920) 940-8711</a></li>
+            <li><strong>Hours:</strong> Tuesdays (call to confirm full hours)</li>
+            <li><strong>Service area:</strong> Algoma, Kewaunee, Casco, Luxemburg, Two Rivers, southern Door Peninsula</li>
+            <li><strong>Specialty:</strong> Same prenatal and pediatric specialty as Green Bay</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- AREAS SERVED -->
+<section id="areas" class="areas" aria-labelledby="areas-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Areas We Serve</div>
+      <h2 class="section-title" id="areas-heading">Serving Brown and Kewaunee County communities <em>across two clinic locations.</em></h2>
+      <p class="section-sub">Patients come from across the Green Bay metro and from Kewaunee County and coastal Lake Michigan communities served by the Algoma Tuesday clinic.</p>
+    </div>
+    <div class="areas-grid">
+      <div class="area-pill reveal"><div class="city">Green Bay</div><div class="note">Main clinic</div></div>
+      <div class="area-pill reveal reveal-delay-1"><div class="city">Algoma</div><div class="note">Tuesdays</div></div>
+      <div class="area-pill reveal reveal-delay-2"><div class="city">De Pere</div><div class="note">7 mi</div></div>
+      <div class="area-pill reveal reveal-delay-3"><div class="city">Allouez</div><div class="note">5 mi</div></div>
+      <div class="area-pill reveal"><div class="city">Howard</div><div class="note">5 mi</div></div>
+      <div class="area-pill reveal reveal-delay-1"><div class="city">Ashwaubenon</div><div class="note">4 mi</div></div>
+      <div class="area-pill reveal reveal-delay-2"><div class="city">Kewaunee</div><div class="note">via Algoma</div></div>
+      <div class="area-pill reveal reveal-delay-3"><div class="city">Luxemburg</div><div class="note">via Algoma</div></div>
+      <div class="area-pill reveal"><div class="city">Casco</div><div class="note">via Algoma</div></div>
+      <div class="area-pill reveal reveal-delay-1"><div class="city">Two Rivers</div><div class="note">via Algoma</div></div>
+      <div class="area-pill reveal reveal-delay-2"><div class="city">Suamico</div><div class="note">8 mi</div></div>
+      <div class="area-pill reveal reveal-delay-3"><div class="city">Southern Door</div><div class="note">Peninsula</div></div>
+    </div>
+    <p class="areas-note">Not on this list? Call (920) 940-8711 and the team will help you find the right clinic and day for your family.</p>
+  </div>
+</section>
+
+<!-- NEW PATIENTS -->
+<section id="newpatients" class="newpatients" aria-labelledby="newpatients-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">New Patients</div>
+      <h2 class="section-title" id="newpatients-heading">Becoming a patient <em>is a three-step process.</em></h2>
+      <p class="section-sub">Family First Chiropractic welcomes new prenatal, pediatric, and family-wellness patients at both clinics. The first visit is about getting to know you and building a care plan for your family.</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step reveal">
+        <div class="step-num">1</div>
+        <h4>Call the practice</h4>
+        <p>One number for both clinics: <a href="tel:9209408711" style="color:var(--sage); font-weight:600;">(920) 940-8711</a>. The team will help you pick the right clinic and the right day, whether Green Bay or Algoma works better for you.</p>
+      </div>
+      <div class="step reveal reveal-delay-1">
+        <div class="step-num">2</div>
+        <h4>Your first visit</h4>
+        <p>The first appointment includes a review of your history, a thorough exam, and a conversation about what you are hoping the practice can help with. No rush, no assembly line.</p>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <div class="step-num">3</div>
+        <h4>A plan built for your family</h4>
+        <p>You leave with a clear picture of your situation and a care plan built around it, from practitioners who will know your family across pregnancies, children, and years.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="faq" aria-labelledby="faq-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">Frequently Asked</div>
+      <h2 class="section-title" id="faq-heading">Questions families ask <em>before booking.</em></h2>
+      <p class="section-sub">Six questions the practice hears from new prenatal and pediatric patients. If yours is not here, call (920) 940-8711.</p>
+    </div>
+    <div class="faq-grid">
+
+      <div class="faq-item reveal">
+        <h4>Who are the practitioners at Family First Chiropractic?</h4>
+        <p>Family First Chiropractic is a two-practitioner family-wellness practice. Dr. Jodi Rabas, DC and Dr. Joe Huss, DC both provide prenatal, preconception, pediatric, postpartum, and family chiropractic care across the Green Bay and Algoma clinics. Specific credentialing details are confirmed at intake.</p>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-1">
+        <h4>What does Family First Chiropractic specialize in?</h4>
+        <p>The practice is anchored to preconception, prenatal, postpartum, pediatric, and birth-process and childhood-development care. The work spans the family lifecycle, from couples preparing for pregnancy through the prenatal window, into postpartum and infant care, and across childhood-development stages.</p>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-2">
+        <h4>How many clinics does the practice have?</h4>
+        <p>Two. The main practice is at 443 S. Jackson Street in Green Bay, open three days a week. The Algoma clinic is at 305 Steele Street and is open every Tuesday. Both clinics are part of the same practice, with the same practitioners and the same specialty focus.</p>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-3">
+        <h4>Do you see patients during every trimester of pregnancy?</h4>
+        <p>Yes. The practice works with prenatal patients across the pregnancy window, including during all three trimesters. The first visit includes a history review and an exam so that care is appropriate for where you are in your pregnancy. Call (920) 940-8711 to book and confirm which clinic works best for your schedule.</p>
+      </div>
+
+      <div class="faq-item reveal">
+        <h4>When can a baby first be seen for chiropractic care?</h4>
+        <p>The practice sees newborn and infant patients from the early weeks of life as part of its pediatric care offering. Every pediatric and infant reference at Family First Chiropractic is written in generic, non-outcome-promise form, and care is appropriate to the age and stage of the child. Call to discuss your specific situation.</p>
+      </div>
+
+      <div class="faq-item reveal reveal-delay-1">
+        <h4>How do I become a new patient?</h4>
+        <p>Call the practice at (920) 940-8711. The team will help you pick the right clinic and the right day, whether that is the Green Bay clinic on South Jackson Street or the Algoma clinic on Tuesdays. The first visit covers your history, a thorough exam, and a plan that fits your family.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section id="contact" class="final-cta" aria-label="Book a visit">
+  <div class="container">
+    <h2>Prenatal and pediatric chiropractic care <em>for the whole family.</em></h2>
+    <p>Family First Chiropractic cares for families across preconception, pregnancy, the newborn period, and childhood. Two clinics, two counties, one specialty. Both the Green Bay clinic on South Jackson Street and the Algoma clinic on Steele Street are welcoming new patients.</p>
+    <div class="final-actions">
+      <a href="tel:9209408711" class="cta-btn cta-btn-cream">Call to Book a Visit</a>
+      <div class="phone-block">
+        <div>
+          <small>Green Bay and Algoma</small>
+          (920) 940-8711
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          Family First Chiropractic
+          <small>Green Bay and Algoma, WI</small>
+        </div>
+        <p class="foot-byline">A two-practitioner family-wellness chiropractic practice anchored to preconception, prenatal, pediatric, and postpartum care. Dr. Jodi Rabas, DC and Dr. Joe Huss, DC. Webster Technique territory. Two clinics in Green Bay and Algoma, Wisconsin.</p>
+      </div>
+      <div>
+        <h5>Green Bay Clinic</h5>
+        <ul>
+          <li>443 S. Jackson Street</li>
+          <li>Green Bay, WI</li>
+          <li>Three days per week</li>
+          <li><a href="tel:9209408711">(920) 940-8711</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Algoma Clinic</h5>
+        <ul>
+          <li>305 Steele Street</li>
+          <li>Algoma, WI</li>
+          <li>Tuesdays</li>
+          <li><a href="tel:9209408711">(920) 940-8711</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Care</h5>
+        <ul>
+          <li><a href="#specialty">Prenatal Chiropractic</a></li>
+          <li><a href="#specialty">Webster Technique</a></li>
+          <li><a href="#specialty">Pediatric Care</a></li>
+          <li><a href="#specialty">Preconception</a></li>
+          <li><a href="#specialty">Postpartum</a></li>
+          <li><a href="#newpatients">New Patients</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <div class="foot-bottom-row">
+        <div>Copyright 2026 Family First Chiropractic. Prenatal, preconception, and pediatric chiropractic care in Green Bay and Algoma, Wisconsin.</div>
+        <div>Demo site prepared by <a class="demo-link" href="https://andrei170.github.io/ag1/#services">AG Consulting</a></div>
+      </div>
+      <div class="foot-disclaimer">
+        This is a demo website prepared by AG Consulting to illustrate a customer-facing site concept for Family First Chiropractic. It is not the official website of Family First Chiropractic and does not constitute chiropractic or medical advice. All clinical descriptions, practitioner credentials, and service references must be reviewed and verified by the practice and its credentialed practitioners before any production use. Every prenatal, pediatric, and Webster Technique reference is written in generic, non-outcome-promise form per WI DSPS Chiropractic Examining Board standards.
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- SCROLL REVEAL + STICKY HEADER SCRIPT -->
+<script>
+(function () {
+  // Sticky header condense
+  var header = document.getElementById('site-header');
+  function onScroll() {
+    if (window.scrollY > 60) {
+      header.classList.add('condensed');
+    } else {
+      header.classList.remove('condensed');
+    }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // Scroll reveal
+  var query = window.matchMedia('(prefers-reduced-motion: no-preference)');
+  if (query.matches) {
+    var reveals = document.querySelectorAll('.reveal');
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    reveals.forEach(function (el) { observer.observe(el); });
+  } else {
+    // Immediately show all for reduced-motion users
+    document.querySelectorAll('.reveal').forEach(function (el) {
+      el.style.opacity = '1';
+      el.style.transform = 'none';
+    });
+  }
+}());
+</script>
+
+</body>
+</html>
