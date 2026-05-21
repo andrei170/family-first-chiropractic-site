@@ -4,6 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Family First Chiropractic | Prenatal and Pediatric Chiropractic Care | Green Bay and Algoma, WI</title>
+  <meta property="og:title" content="Family First Chiropractic | Prenatal and Pediatric Chiropractic Care | Green Bay and Algoma, WI">
+  <meta property="og:description" content="Family First Chiropractic provides prenatal, preconception, postpartum, and pediatric chiropractic care for the whole family. Two clinics: Green Bay (443 S. Jackson Street) and Algoma (305 Steele Street, Tuesdays). Dr. Jodi Rabas, DC and Dr. Joe Huss, DC. Webster Technique territory.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://andrei170.github.io/family-first-chiropractic-site/">
+  <meta property="og:image" content="https://cdcssl.ibsrv.net/ibimg/smb/1233x821_80/webmgr/0m/u/7/gallery/Jodi-527.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://cdcssl.ibsrv.net/ibimg/smb/1233x821_80/webmgr/0m/u/7/gallery/Jodi-527.jpg">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' rx='12' fill='%230f172a'/><text x='32' y='44' font-size='38' font-family='Georgia,serif' fill='%23ffffff' text-anchor='middle'>F</text></svg>">
+
 <meta name="description" content="Family First Chiropractic provides prenatal, preconception, postpartum, and pediatric chiropractic care for the whole family. Two clinics: Green Bay (443 S. Jackson Street) and Algoma (305 Steele Street, Tuesdays). Dr. Jodi Rabas, DC and Dr. Joe Huss, DC. Webster Technique territory.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,6 +48,7 @@
     background: var(--cream);
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
   a { color: inherit; text-decoration: none; }
   img { max-width: 100%; height: auto; display: block; }
@@ -92,43 +102,67 @@
 
   /* ---- HERO ---- */
   .hero {
-    min-height: 100vh;
-    background: linear-gradient(148deg, var(--navy) 0%, var(--sage-deep) 55%, var(--navy-deep) 100%);
+    height: 100vh;
+    min-height: 600px;
     color: var(--cream);
     display: flex; align-items: center;
     position: relative; overflow: hidden;
     padding: 100px 0 80px;
   }
+
+  /* Ken-burns photo layer */
   .hero-bg-photo {
     position: absolute; inset: 0; z-index: 0;
     background-image: url('https://cdcssl.ibsrv.net/ibimg/smb/1233x821_80/webmgr/0m/u/7/gallery/Jodi-527.jpg.webp');
     background-size: cover; background-position: center 30%;
-    opacity: 0.22;
+    will-change: transform;
   }
+  @media (prefers-reduced-motion: no-preference) {
+    .hero-bg-photo {
+      animation: kenburns 18s ease-in-out infinite alternate;
+    }
+  }
+  @keyframes kenburns {
+    from { transform: scale(1.0) translate(0, 0); }
+    to   { transform: scale(1.10) translate(-1%, 1%); }
+  }
+
+  /* gradient scrim */
+  .hero-scrim {
+    position: absolute; inset: 0; z-index: 1;
+    background: linear-gradient(
+      148deg,
+      rgba(20,38,57,0.82) 0%,
+      rgba(31,58,82,0.68) 40%,
+      rgba(58,99,85,0.60) 70%,
+      rgba(20,38,57,0.78) 100%
+    );
+  }
+
   .hero::before {
     content: ''; position: absolute; top: -15%; right: -8%;
     width: 780px; height: 780px;
-    background: radial-gradient(circle, rgba(201,168,120,0.18), transparent 60%);
-    filter: blur(80px); pointer-events: none; z-index: 1;
+    background: radial-gradient(circle, rgba(201,168,120,0.14), transparent 60%);
+    filter: blur(80px); pointer-events: none; z-index: 2;
   }
   .hero::after {
     content: ''; position: absolute; bottom: -18%; left: -8%;
     width: 560px; height: 560px;
-    background: radial-gradient(circle, rgba(163,196,181,0.22), transparent 65%);
-    filter: blur(65px); pointer-events: none; z-index: 1;
+    background: radial-gradient(circle, rgba(163,196,181,0.16), transparent 65%);
+    filter: blur(65px); pointer-events: none; z-index: 2;
   }
   /* Subtle organic arc decoration */
   .hero-arc {
     position: absolute; bottom: -2px; left: 0; right: 0;
-    height: 80px; overflow: hidden;
+    height: 80px; overflow: hidden; z-index: 3;
   }
   .hero-arc svg { width: 100%; height: 100%; display: block; }
 
   .hero-inner {
     display: grid; grid-template-columns: 1.3fr 1fr; gap: 72px; align-items: center;
-    position: relative; z-index: 2; width: 100%;
+    position: relative; z-index: 4; width: 100%;
   }
-  .hero-inner > div:first-child { position: relative; z-index: 2; }
+  .hero-inner > div:first-child { position: relative; z-index: 4; }
   @media (max-width: 980px) { .hero-inner { grid-template-columns: 1fr; gap: 52px; } }
 
   .hero-eyebrow {
@@ -338,6 +372,52 @@
     color: var(--cream);
   }
 
+  /* ---- FEATURE BAND ---- */
+  .feature-band {
+    width: 100vw; position: relative; left: 50%; right: 50%;
+    margin-left: -50vw; margin-right: -50vw;
+    height: 60vh; min-height: 400px; max-height: 680px;
+    overflow: hidden; display: flex; align-items: flex-end;
+  }
+  .feature-band-img {
+    position: absolute; inset: 0;
+  }
+  .feature-band-img img {
+    width: 100%; height: 100%; object-fit: cover; object-position: center 28%;
+    display: block;
+  }
+  .feature-band-scrim {
+    position: absolute; inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(20,38,57,0.78) 0%,
+      rgba(20,38,57,0.28) 50%,
+      rgba(20,38,57,0.06) 100%
+    );
+  }
+  .feature-band-caption {
+    position: relative; z-index: 2;
+    width: 100%; padding: 40px 40px 44px;
+    display: flex; align-items: flex-end; justify-content: space-between; gap: 24px;
+    flex-wrap: wrap;
+  }
+  .feature-band-text {
+    max-width: 680px;
+  }
+  .feature-band-eyebrow {
+    font-size: 10px; font-weight: 700; letter-spacing: 0.26em; text-transform: uppercase;
+    color: var(--sage-soft); margin-bottom: 10px;
+  }
+  .feature-band-hl {
+    font-family: var(--serif); font-size: clamp(22px, 3.2vw, 38px);
+    font-style: italic; font-weight: 500; line-height: 1.22;
+    color: var(--cream);
+  }
+  .feature-band-hl em { color: var(--warm); font-style: normal; font-weight: 600; }
+  @media (max-width: 680px) {
+    .feature-band-caption { padding: 28px 24px 32px; }
+  }
+
   /* ---- SERVICES ---- */
   .services { background: var(--cream); }
   .services-grid {
@@ -479,28 +559,100 @@
   .location-details a { color: var(--sage); font-weight: 600; }
   .location-details a:hover { color: var(--sage-deep); text-decoration: underline; }
 
-  /* ---- CLINIC PHOTO STRIP ---- */
-  .photo-strip {
-    background: var(--navy-deep); padding: 0; overflow: hidden;
+  /* ---- GALLERY ---- */
+  .gallery-section { background: var(--navy-deep); padding: 80px 0; }
+  .gallery-section .section-header { margin-bottom: 44px; }
+  .gallery-section .section-eyebrow { color: var(--sage-soft); }
+  .gallery-section .section-title { color: var(--cream); }
+  .gallery-section .section-title em { color: var(--warm); }
+  .gallery-section .section-sub { color: rgba(247,243,236,0.72); }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto auto;
+    gap: 10px;
   }
-  .photo-strip-inner {
-    display: grid; grid-template-columns: repeat(4, 1fr); gap: 0;
-    height: 280px;
+  @media (max-width: 900px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 540px) { .gallery-grid { grid-template-columns: repeat(2, 1fr); } }
+
+  .gallery-item {
+    overflow: hidden; position: relative; border-radius: 3px;
+    cursor: pointer; background: var(--navy);
   }
-  @media (max-width: 780px) {
-    .photo-strip-inner { grid-template-columns: repeat(2, 1fr); height: 400px; }
+  /* make first item span 2 rows */
+  .gallery-item:first-child {
+    grid-row: span 2;
   }
-  @media (max-width: 480px) {
-    .photo-strip-inner { grid-template-columns: 1fr 1fr; height: 360px; }
-  }
-  .photo-strip-item {
-    overflow: hidden; position: relative;
-  }
-  .photo-strip-item img {
+  .gallery-item img {
     width: 100%; height: 100%; object-fit: cover; display: block;
     transition: transform 0.55s ease;
+    aspect-ratio: 1 / 1;
   }
-  .photo-strip-item:hover img { transform: scale(1.06); }
+  .gallery-item:first-child img {
+    aspect-ratio: unset;
+    height: 100%;
+  }
+  .gallery-item:hover img { transform: scale(1.07); }
+
+  .gallery-item-overlay {
+    position: absolute; inset: 0;
+    background: rgba(20,38,57,0);
+    transition: background 0.3s;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .gallery-item:hover .gallery-item-overlay {
+    background: rgba(20,38,57,0.32);
+  }
+  .gallery-zoom-icon {
+    opacity: 0; transform: scale(0.8);
+    transition: opacity 0.3s, transform 0.3s;
+    color: var(--white);
+  }
+  .gallery-item:hover .gallery-zoom-icon {
+    opacity: 1; transform: scale(1);
+  }
+
+  /* ---- LIGHTBOX ---- */
+  .lightbox {
+    display: none; position: fixed; inset: 0; z-index: 999;
+    background: rgba(10,16,22,0.95);
+    align-items: center; justify-content: center;
+    padding: 20px;
+  }
+  .lightbox.open { display: flex; }
+  .lightbox-inner {
+    position: relative; max-width: 1100px; width: 100%; text-align: center;
+  }
+  .lightbox-img {
+    max-height: 80vh; max-width: 100%; width: auto; height: auto;
+    border-radius: 4px; box-shadow: 0 32px 80px rgba(0,0,0,0.6);
+    display: block; margin: 0 auto;
+  }
+  .lightbox-caption {
+    margin-top: 18px; font-size: 13px; color: rgba(247,243,236,0.68);
+    letter-spacing: 0.08em;
+  }
+  .lightbox-close {
+    position: fixed; top: 24px; right: 28px;
+    background: none; border: none; cursor: pointer;
+    color: rgba(247,243,236,0.8); font-size: 32px; line-height: 1;
+    transition: color 0.2s; z-index: 1000;
+  }
+  .lightbox-close:hover { color: var(--white); }
+  .lightbox-prev,
+  .lightbox-next {
+    position: fixed; top: 50%; transform: translateY(-50%);
+    background: rgba(31,58,82,0.6); border: 1px solid rgba(255,255,255,0.14);
+    color: var(--cream); cursor: pointer; border-radius: 3px;
+    width: 48px; height: 64px; font-size: 22px;
+    display: flex; align-items: center; justify-content: center;
+    transition: background 0.2s; z-index: 1000;
+  }
+  .lightbox-prev { left: 16px; }
+  .lightbox-next { right: 16px; }
+  .lightbox-prev:hover,
+  .lightbox-next:hover { background: rgba(31,58,82,0.9); }
 
   /* ---- AREAS SERVED ---- */
   .areas { background: var(--bone); }
@@ -675,6 +827,7 @@
 <!-- HERO -->
 <section class="hero" aria-label="Welcome">
   <div class="hero-bg-photo" aria-hidden="true" role="presentation"></div>
+  <div class="hero-scrim" aria-hidden="true"></div>
   <div class="container">
     <div class="hero-inner">
       <div>
@@ -798,6 +951,26 @@
     </div>
   </div>
 </section>
+
+<!-- FULL-BLEED FEATURE BAND -->
+<div class="feature-band" role="img" aria-label="Family First Chiropractic prenatal care session">
+  <div class="feature-band-img">
+    <img
+      src="https://cdcssl.ibsrv.net/ibimg/smb/1064x708_80/webmgr/0m/u/7/gallery/Jodi-200.jpg.webp"
+      alt="Dr. Rabas with a patient during a prenatal chiropractic visit"
+      loading="lazy"
+      width="1064" height="708"
+    >
+  </div>
+  <div class="feature-band-scrim" aria-hidden="true"></div>
+  <div class="feature-band-caption">
+    <div class="feature-band-text">
+      <div class="feature-band-eyebrow">Prenatal Chiropractic - Green Bay and Algoma</div>
+      <p class="feature-band-hl">A practice that sees you before the first trimester, through delivery, and into the <em>years that follow.</em></p>
+    </div>
+    <a href="tel:9209408711" class="cta-btn" style="flex-shrink:0;">Call to Book</a>
+  </div>
+</div>
 
 <!-- SERVICES -->
 <section id="services" class="services" aria-labelledby="services-heading">
@@ -991,41 +1164,91 @@
   </div>
 </section>
 
-<!-- CLINIC PHOTO STRIP -->
-<div class="photo-strip" role="region" aria-label="Family First Chiropractic clinic photos">
-  <div class="photo-strip-inner">
-    <div class="photo-strip-item">
-      <img
-        src="https://cdcssl.ibsrv.net/ibimg/smb/1064x708_80/webmgr/0m/u/7/gallery/Jodi-156.jpg.webp"
-        alt="Family First Chiropractic care session"
-        loading="lazy"
-        width="1064" height="708"
-      >
+<!-- GALLERY -->
+<section class="gallery-section" aria-labelledby="gallery-heading">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-eyebrow">The Clinic in Practice</div>
+      <h2 class="section-title" id="gallery-heading">A look inside <em>Family First Chiropractic.</em></h2>
+      <p class="section-sub">Real photos from the Green Bay practice - care sessions, the clinic environment, and the team at work.</p>
     </div>
-    <div class="photo-strip-item">
-      <img
-        src="https://cdcssl.ibsrv.net/ibimg/smb/1064x708_80/webmgr/0m/u/7/gallery/Jodi-200.jpg.webp"
-        alt="Family First Chiropractic prenatal chiropractic care"
-        loading="lazy"
-        width="1064" height="708"
-      >
+    <div class="gallery-grid" id="gallery-grid">
+
+      <div class="gallery-item" data-index="0" data-src="https://cdcssl.ibsrv.net/ibimg/smb/1064x708_80/webmgr/0m/u/7/gallery/Jodi-156.jpg.webp" data-alt="Family First Chiropractic care session" role="button" tabindex="0" aria-label="View photo 1 - care session">
+        <img src="https://cdcssl.ibsrv.net/ibimg/smb/1064x708_80/webmgr/0m/u/7/gallery/Jodi-156.jpg.webp" alt="Family First Chiropractic care session" loading="lazy" width="1064" height="708">
+        <div class="gallery-item-overlay">
+          <span class="gallery-zoom-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="9" stroke="white" stroke-width="2"/><path d="M21 21 L28 28" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M10 14 H18 M14 10 V18" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-index="1" data-src="https://cdcssl.ibsrv.net/ibimg/smb/1064x708_80/webmgr/0m/u/7/gallery/Jodi-200.jpg.webp" data-alt="Prenatal chiropractic care" role="button" tabindex="0" aria-label="View photo 2 - prenatal care">
+        <img src="https://cdcssl.ibsrv.net/ibimg/smb/1064x708_80/webmgr/0m/u/7/gallery/Jodi-200.jpg.webp" alt="Prenatal chiropractic care" loading="lazy" width="1064" height="708">
+        <div class="gallery-item-overlay">
+          <span class="gallery-zoom-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="9" stroke="white" stroke-width="2"/><path d="M21 21 L28 28" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M10 14 H18 M14 10 V18" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-index="2" data-src="https://cdcssl.ibsrv.net/ibimg/smb/1064x708_80/webmgr/0m/u/7/gallery/Jodi-261.jpg.webp" data-alt="Pediatric chiropractic session" role="button" tabindex="0" aria-label="View photo 3 - pediatric care">
+        <img src="https://cdcssl.ibsrv.net/ibimg/smb/1064x708_80/webmgr/0m/u/7/gallery/Jodi-261.jpg.webp" alt="Pediatric chiropractic session" loading="lazy" width="1064" height="708">
+        <div class="gallery-item-overlay">
+          <span class="gallery-zoom-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="9" stroke="white" stroke-width="2"/><path d="M21 21 L28 28" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M10 14 H18 M14 10 V18" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-index="3" data-src="https://cdcssl.ibsrv.net/ibimg/smb/1029x685_80/webmgr/0m/u/7/gallery/Jodi-518.jpg.webp" data-alt="Family wellness chiropractic care" role="button" tabindex="0" aria-label="View photo 4 - family wellness">
+        <img src="https://cdcssl.ibsrv.net/ibimg/smb/1029x685_80/webmgr/0m/u/7/gallery/Jodi-518.jpg.webp" alt="Family wellness chiropractic care" loading="lazy" width="1029" height="685">
+        <div class="gallery-item-overlay">
+          <span class="gallery-zoom-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="9" stroke="white" stroke-width="2"/><path d="M21 21 L28 28" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M10 14 H18 M14 10 V18" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-index="4" data-src="https://cdcssl.ibsrv.net/ibimg/smb/1233x821_80/webmgr/0m/u/7/gallery/Jodi-527.jpg.webp" data-alt="Dr. Jodi Rabas at Family First Chiropractic" role="button" tabindex="0" aria-label="View photo 5 - Dr. Jodi Rabas">
+        <img src="https://cdcssl.ibsrv.net/ibimg/smb/1233x821_80/webmgr/0m/u/7/gallery/Jodi-527.jpg.webp" alt="Dr. Jodi Rabas at Family First Chiropractic" loading="lazy" width="1233" height="821">
+        <div class="gallery-item-overlay">
+          <span class="gallery-zoom-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="9" stroke="white" stroke-width="2"/><path d="M21 21 L28 28" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M10 14 H18 M14 10 V18" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-index="5" data-src="https://cdcssl.ibsrv.net/ibimg/smb/1048x698_80/webmgr/0m/u/7/gallery/Jodi-317.jpg.webp" data-alt="Chiropractic adjustment at Family First" role="button" tabindex="0" aria-label="View photo 6 - chiropractic care">
+        <img src="https://cdcssl.ibsrv.net/ibimg/smb/1048x698_80/webmgr/0m/u/7/gallery/Jodi-317.jpg.webp" alt="Chiropractic adjustment at Family First" loading="lazy" width="1048" height="698">
+        <div class="gallery-item-overlay">
+          <span class="gallery-zoom-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="9" stroke="white" stroke-width="2"/><path d="M21 21 L28 28" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M10 14 H18 M14 10 V18" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </div>
+      </div>
+
+      <div class="gallery-item" data-index="6" data-src="https://cdcssl.ibsrv.net/ibimg/smb/900x599_80/webmgr/0m/u/7/gallery/Jodi-49.jpg.webp" data-alt="Dr. Jodi Rabas DC" role="button" tabindex="0" aria-label="View photo 7 - Dr. Rabas">
+        <img src="https://cdcssl.ibsrv.net/ibimg/smb/900x599_80/webmgr/0m/u/7/gallery/Jodi-49.jpg.webp" alt="Dr. Jodi Rabas DC" loading="lazy" width="900" height="599">
+        <div class="gallery-item-overlay">
+          <span class="gallery-zoom-icon" aria-hidden="true">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><circle cx="14" cy="14" r="9" stroke="white" stroke-width="2"/><path d="M21 21 L28 28" stroke="white" stroke-width="2" stroke-linecap="round"/><path d="M10 14 H18 M14 10 V18" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+          </span>
+        </div>
+      </div>
+
     </div>
-    <div class="photo-strip-item">
-      <img
-        src="https://cdcssl.ibsrv.net/ibimg/smb/1064x708_80/webmgr/0m/u/7/gallery/Jodi-261.jpg.webp"
-        alt="Family First Chiropractic pediatric chiropractic session"
-        loading="lazy"
-        width="1064" height="708"
-      >
-    </div>
-    <div class="photo-strip-item">
-      <img
-        src="https://cdcssl.ibsrv.net/ibimg/smb/1029x685_80/webmgr/0m/u/7/gallery/Jodi-518.jpg.webp"
-        alt="Family First Chiropractic family wellness care"
-        loading="lazy"
-        width="1029" height="685"
-      >
-    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lightbox-close" id="lightbox-close" aria-label="Close photo viewer">&times;</button>
+  <button class="lightbox-prev" id="lightbox-prev" aria-label="Previous photo">&#8249;</button>
+  <button class="lightbox-next" id="lightbox-next" aria-label="Next photo">&#8250;</button>
+  <div class="lightbox-inner">
+    <img class="lightbox-img" id="lightbox-img" src="" alt="">
+    <div class="lightbox-caption" id="lightbox-caption"></div>
   </div>
 </div>
 
@@ -1249,9 +1472,11 @@
   </div>
 </footer>
 
-<!-- SCROLL REVEAL + STICKY HEADER SCRIPT -->
+<!-- SCROLL REVEAL + STICKY HEADER + LIGHTBOX SCRIPTS -->
 <script>
 (function () {
+  'use strict';
+
   // Sticky header condense
   var header = document.getElementById('site-header');
   function onScroll() {
@@ -1264,8 +1489,8 @@
   window.addEventListener('scroll', onScroll, { passive: true });
 
   // Scroll reveal
-  var query = window.matchMedia('(prefers-reduced-motion: no-preference)');
-  if (query.matches) {
+  var motionOk = window.matchMedia('(prefers-reduced-motion: no-preference)').matches;
+  if (motionOk) {
     var reveals = document.querySelectorAll('.reveal');
     var observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
@@ -1277,12 +1502,80 @@
     }, { threshold: 0.12 });
     reveals.forEach(function (el) { observer.observe(el); });
   } else {
-    // Immediately show all for reduced-motion users
     document.querySelectorAll('.reveal').forEach(function (el) {
       el.style.opacity = '1';
       el.style.transform = 'none';
     });
   }
+
+  // Lightbox
+  var lightbox = document.getElementById('lightbox');
+  var lbImg    = document.getElementById('lightbox-img');
+  var lbCap    = document.getElementById('lightbox-caption');
+  var lbClose  = document.getElementById('lightbox-close');
+  var lbPrev   = document.getElementById('lightbox-prev');
+  var lbNext   = document.getElementById('lightbox-next');
+
+  var galleryItems = Array.from(document.querySelectorAll('.gallery-item'));
+  var currentIndex = 0;
+
+  function openLightbox(index) {
+    currentIndex = index;
+    var item = galleryItems[currentIndex];
+    lbImg.src = item.getAttribute('data-src');
+    lbImg.alt = item.getAttribute('data-alt');
+    lbCap.textContent = item.getAttribute('data-alt');
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    lbClose.focus();
+  }
+
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+    galleryItems[currentIndex].focus();
+  }
+
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + galleryItems.length) % galleryItems.length;
+    var item = galleryItems[currentIndex];
+    lbImg.src = item.getAttribute('data-src');
+    lbImg.alt = item.getAttribute('data-alt');
+    lbCap.textContent = item.getAttribute('data-alt');
+  }
+
+  function showNext() {
+    currentIndex = (currentIndex + 1) % galleryItems.length;
+    var item = galleryItems[currentIndex];
+    lbImg.src = item.getAttribute('data-src');
+    lbImg.alt = item.getAttribute('data-alt');
+    lbCap.textContent = item.getAttribute('data-alt');
+  }
+
+  galleryItems.forEach(function (item, i) {
+    item.addEventListener('click', function () { openLightbox(i); });
+    item.addEventListener('keydown', function (e) {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(i); }
+    });
+  });
+
+  lbClose.addEventListener('click', closeLightbox);
+  lbPrev.addEventListener('click', showPrev);
+  lbNext.addEventListener('click', showNext);
+
+  // Click outside image to close
+  lightbox.addEventListener('click', function (e) {
+    if (e.target === lightbox) { closeLightbox(); }
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', function (e) {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape')      { closeLightbox(); }
+    else if (e.key === 'ArrowLeft')  { showPrev(); }
+    else if (e.key === 'ArrowRight') { showNext(); }
+  });
+
 }());
 </script>
 
